@@ -699,19 +699,3 @@ footer small {
   float: left;
   color: #999;
 } 
-:root {
-  --markprompt-primary: #000000;
-  --markprompt-primaryMuted: #171717;
-  --markprompt-primaryHighlight: #D4D4D4;
-  --markprompt-secondaryHighlight: #525252;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --markprompt-primary: #FFFFFF;
-    --markprompt-primaryForeground: #000000;
-    --markprompt-primaryMuted: #f5f5f5;
-    --markprompt-primaryHighlight: #D4D4D4;
-    --markprompt-secondaryHighlight: #525252;
-  }
-}
