@@ -303,7 +303,7 @@
           </header>
 
          <font size="2.5px">
-          My first computer was a 300MHz IBM with a monitor that sat atop. It came with Windows 98 and new on the market 56k. The world was at my fingertips. I could learn whatever I wanted and I didn't need to leave the house. I soon upgraded it to Windows 2000, updated the graphics cards, sound cards, and even added CD-RW.  I taught myself to program with Visual Basic, I made websites with Frontpage, and by the time Windows XP came out I was hacking other computers. <br><br>
+          My first computer was a 300MHz IBM with a monitor that sat atop. It came with Windows 98 and new on the market 56k. The world was at my fingertips. I could learn whatever I wanted and I didn't need to leave the house. I soon upgraded it to Windows 2000, updated the graphics cards, sound cards, and even added CD-RW.  I taught myself to program with Visual Basic, I made websites with Frontpage, I was a beta tester for BitTorrent, and taught myself how to hack other computers. The early 2000s was a great time to be the internet.<br><br>
           I have 20+ years of experience with website design and at least another 20 years of experience with hardware/software support. I am the CEO and Lead Web Designer of <a href="https://dearborn.io">dearborn.io</a>, a Website as a Service (WaaS) company.<br><br>
           I decided to make this page as a "developer profile" and went with the iconic MySpace theme of the early 2000s, music player included. Deciding on a song is still one of the most difficult decisions for this page.<br><br>
           On this page you'll find information about my technology equipment and experience.<br><br>
@@ -367,44 +367,13 @@ Coming soon! <br><br><br><br><br><br><br><br><br>
 
     </div>
 
-<link rel="stylesheet" href="https://unpkg.com/@markprompt/css@0.9.2/markprompt.css" />
-<script>
-  window.markprompt = {
-      projectKey: 'DpdghkBf4fGoWFNgxsj2pdA0qBgtOdVe',
-      container: '#markprompt',
-      prompt: {
-        promptTemplate: 'You are a very enthusiastic company representative who loves to help people! Given the following sections from the documentation (preceded by a section id), answer the question using only that information, output in Markdown format. If you are unsure and the answer is not explicitly written in the documentation, say "{{I_DONT_KNOW}}".\n\nContext sections:\n---\n{{CONTEXT}}\n\nQuestion: "{{PROMPT}}"\n\nAnswer as a haiku:',
-        placeholder: 'Ask Hamoudy AI…',
-      },
-      references: {
-        loadingText: 'Choosing my words carefully…',
-      },
-    }
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "bf4f5048-1b70-4f78-a263-302c0a4bbb6a",
+        apiHost: "https://flowise.soneknet.com",
+    })
 </script>
-<script async src="https://unpkg.com/@markprompt/web@0.13.3/dist/init.js"></script>
-
-<!-- Container for the Markprompt trigger button -->
-<div id="markprompt" />
-
-<!-- Custom style -->
-<style>
-  :root {
-    --markprompt-primary: #000000;
-    --markprompt-primaryMuted: #171717;
-    --markprompt-primaryHighlight: #D4D4D4;
-    --markprompt-secondaryHighlight: #525252;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --markprompt-primary: #FFFFFF;
-      --markprompt-primaryForeground: #000000;
-      --markprompt-primaryMuted: #f5f5f5;
-      --markprompt-primaryHighlight: #D4D4D4;
-      --markprompt-secondaryHighlight: #525252;
-    }
-  }
-</style>
 
 
     <!-- Footer -->
