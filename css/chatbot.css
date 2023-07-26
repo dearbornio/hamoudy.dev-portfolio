@@ -55,3 +55,27 @@ body {
         }
     }
 }
+body {
+    /* Add the previous CSS styles here */
+
+    /* Add a media query for smaller screen sizes (e.g., mobile devices) */
+    @media (max-width: 768px) {
+        .desktop-content {
+            display: none; /* Hide the desktop content on mobile devices */
+        }
+
+        .mobile-content {
+            display: block; /* Show the mobile content on mobile devices */
+        }
+    }
+
+    /* Add styles for desktop view */
+    .desktop-content {
+        display: block;
+    }
+
+    /* Add styles for mobile view */
+    .mobile-content {
+        display: none;
+    }
+}
