@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title> &#128125; &#128172; hamoudy.dev</title>
 
-    <!-- Matomo -->
+<!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -25,21 +25,54 @@
 <!-- End Matomo Code -->
 
 <body>
-  
-    <div class="chatbot-container">
-        <div class="chatbot">
-
+  <div class="chatbot-container">
+  <div class="chatbot">
   <div class="content" div style="display: flex; justify-content: center;">
-    <embed src="https://flowise.soneknet.com/chatbot/bf4f5048-1b70-4f78-a263-302c0a4bbb6a" width="500" height="600">
-        </div>
-    </div>
-
-  <center>
-<p>Click <a href="/myspace.html">here</a> to visit MySpace page.</p>
-  <!-- Footer -->
-  <div class="footer">
-    <b>©2023 hamoudy.dev</b></center>
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/gh/soneknet/flowise/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "bf4f5048-1b70-4f78-a263-302c0a4bbb6a",
+        apiHost: "https://flowise.soneknet.com",
+        theme: {
+            chatWindow: {
+                welcomeMessage: "You are chatting with Mohammad Tiba, also known as Hamoudy. How can I assist you today? Feel free to ask me anything about technology, programming, AI chatbots, or even my hobbies like birdwatching or baking bread. Let's have a great conversation! ********FYI and I'm sorry, but this website is not mobile friendly." ,
+                backgroundColor: "#43435A",
+                height: 500,
+                width: 400,
+                fontSize: 11,
+                poweredByTextColor: "#43435A",
+                botMessage: {
+                    backgroundColor: "#5F5454",
+                    textColor: "#FFFFFF",
+                    showAvatar: true,
+                    avatarSrc: "https://hamoudy.dev/pictures/hamoudy.jpg",
+                },
+                userMessage: {
+                    backgroundColor: "#3D5375",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png",
+                },
+                textInput: {
+                    placeholder: "Type your question",
+                    backgroundColor: "#2C2C33",
+                    textColor: "#ffffff",
+                    sendButtonColor: "#F8F58C",
+                }
+            }
+        }
+    })
+</script>
+  </div>
   </div>
 </body>
+    
+<div class="footer">
+  <center>
+    <p>Click <a href="/myspace.html">here</a> to visit MySpace page.</p>
+    <b>©2023 hamoudy.dev</b>
+  </center>
+</div>
 
 </html>
