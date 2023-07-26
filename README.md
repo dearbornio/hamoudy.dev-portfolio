@@ -1,1 +1,1 @@
-A MySpace themed developer porfolio website, music player included. # hamoudy.dev-portfolio
+Originally started off as just a MySpace page to showcase my skills and eventually I added my own chatbot on there. So now it's a chat page with a link to the MySpace. The music player on the profile page works!
