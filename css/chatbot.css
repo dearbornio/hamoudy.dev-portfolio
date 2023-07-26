@@ -44,38 +44,3 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-body {
-    /* Add the previous CSS styles here */
-
-    /* Add a media query for smaller screen sizes (e.g., mobile devices) */
-    @media (max-width: 768px) {
-        .content embed {
-            width: 300px; /* Adjust the width to your desired size */
-            height: 500px; /* Adjust the height to your desired size */
-        }
-    }
-}
-body {
-    /* Add the previous CSS styles here */
-
-    /* Add a media query for smaller screen sizes (e.g., mobile devices) */
-    @media (max-width: 768px) {
-        .desktop-content {
-            display: none; /* Hide the desktop content on mobile devices */
-        }
-
-        .mobile-content {
-            display: block; /* Show the mobile content on mobile devices */
-        }
-    }
-
-    /* Add styles for desktop view */
-    .desktop-content {
-        display: block;
-    }
-
-    /* Add styles for mobile view */
-    .mobile-content {
-        display: none;
-    }
-}
