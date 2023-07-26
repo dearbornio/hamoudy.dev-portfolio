@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -39,8 +40,6 @@ body {
 }
 
 .chatbot {
-    /* Add styles for your chatbot container here */
-    /* For example: */
     max-width: 400px;
     padding: 20px;
     border-radius: 10px;
