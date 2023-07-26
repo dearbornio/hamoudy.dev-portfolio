@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #00C4FF, #B3FFAB, #FABE50, #FF4E50, #F6D600, #00C4FF);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite, psychedelicEffect 5s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes psychedelicEffect {
+    0% {
+        filter: hue-rotate(0deg) saturate(100%);
+    }
+    100% {
+        filter: hue-rotate(360deg) saturate(200%);
+    }
+}
+
+.chatbot {
+    /* Add styles for your chatbot container here */
+    /* For example: */
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    /* Previous CSS styles */
+    animation: gradientAnimation 15s ease infinite, psychedelicEffect 5s ease infinite alternate, scaleEffect 5s ease infinite alternate, blurEffect 6s ease infinite alternate;
+}
+
+@keyframes blurEffect {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(5px);
+    }
+}
