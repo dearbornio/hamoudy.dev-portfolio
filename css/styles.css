@@ -4,9 +4,29 @@ html {
     padding: 0;
     height: 100%;
 }
+.banner {
+    background-color: #f44336;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        display: block;
+    }
+}
+body {
+    overflow: hidden; /* Hide scroll on mobile devices */
+}
+
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(-45deg, #00C4FF, #B3FFAB, #FABE50, #FF4E50, #F6D600, #00C4FF);
